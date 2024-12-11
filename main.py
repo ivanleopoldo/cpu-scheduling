@@ -20,15 +20,17 @@ if __name__ == "__main__":
         ],
     ).execute()
 
+    filePath = os.path.dirname(os.path.abspath(__file__)) + "/core"
+
     if choice == 0:
-        os.system("python ./core/fcfs.py")
+        os.system(f"python {filePath}/fcfs.py")
     elif choice == 1:
-        os.system("python ./core/sjf.py")
+        os.system(f"python {filePath}/sjf.py")
     elif choice == 2:
-        os.system("python ./core/prio-np.py")
+        os.system(f"python {filePath}/prio-np.py")
     elif choice == 3:
-        os.system("python ./core/prio-p.py")
+        os.system(f"python {filePath}/prio-p.py")
     elif choice == 4:
-        os.system("python ./core/mlq.py")
+        os.system(f"python {filePath}/mlq.py")
     elif choice == 5:
-        os.system("python ./core/roundrobin.py")
+        os.system(f"python {filePath}/roundrobin.py")
